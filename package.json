@@ -33,7 +33,9 @@
     "preset": "react-native"
   },
   "lint-staged": {
-    "**/*.{js,json,md}": ["eslint --fix", "git add"],
+    "linters": {
+      "**/*.{js,json,md}": ["eslint --fix", "git add"]
+    },
     "ignore": ["package.json"]
   }
 }
